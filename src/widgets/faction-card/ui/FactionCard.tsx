@@ -1,9 +1,10 @@
 import type { FactionId } from '@/entities/faction/model/types'
+import { asset } from '@/shared/lib/asset'
 
 const LOGOS: Record<string, string> = {
-  terminidos: '/ref-assets/terminidos.png',
-  automatas:  '/ref-assets/automatas.png',
-  iluminados: '/ref-assets/iluminados.png',
+  terminidos: asset('/ref-assets/terminidos.png'),
+  automatas:  asset('/ref-assets/automatas.png'),
+  iluminados: asset('/ref-assets/iluminados.png'),
 }
 
 interface Props {

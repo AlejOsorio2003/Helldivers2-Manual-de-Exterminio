@@ -3,11 +3,12 @@ import { getFactionById } from '@/entities/faction/model/data'
 import type { FactionId, Enemy, ThreatLevel } from '@/entities/faction/model/types'
 import BackButton from '@/shared/ui/BackButton'
 import AppFooter from '@/shared/ui/AppFooter'
+import { asset } from '@/shared/lib/asset'
 
 const LOGOS: Record<string, string> = {
-  terminidos: '/ref-assets/terminidos.png',
-  automatas:  '/ref-assets/automatas.png',
-  iluminados: '/ref-assets/iluminados.png',
+  terminidos: asset('/ref-assets/terminidos.png'),
+  automatas:  asset('/ref-assets/automatas.png'),
+  iluminados: asset('/ref-assets/iluminados.png'),
 }
 
 const THREAT_LABELS: Record<ThreatLevel, string> = {
@@ -72,7 +73,7 @@ function UnitCard({ enemy, color }: { enemy: Enemy; color: string }) {
         >
           {!imgError ? (
             <img
-              src={enemy.image}
+              src={asset(enemy.image)}
               alt={enemy.name}
               loading="lazy"
               onError={() => setImgError(true)}
@@ -207,7 +208,7 @@ export default function FactionDetailPage({ factionId, onBack }: Props) {
           </span>
         </div>
         <img
-          src="/ref-assets/logo-manual.png"
+          src={asset('/ref-assets/logo-manual.png')}
           alt="Manual de Exterminio"
           className="h-11 object-contain"
           style={{ filter: 'brightness(0) invert(1)' }}

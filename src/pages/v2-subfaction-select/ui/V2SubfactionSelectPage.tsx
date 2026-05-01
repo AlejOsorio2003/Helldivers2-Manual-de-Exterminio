@@ -3,11 +3,12 @@ import type { FactionId } from '@/entities/faction/model/types'
 import type { Subfaction } from '@/entities/faction/model/vol2-types'
 import BackButton from '@/shared/ui/BackButton'
 import AppFooter from '@/shared/ui/AppFooter'
+import { asset } from '@/shared/lib/asset'
 
 const LOGOS: Record<string, string> = {
-  terminidos: '/ref-assets/terminidos.png',
-  automatas:  '/ref-assets/automatas.png',
-  iluminados: '/ref-assets/iluminados.png',
+  terminidos: asset('/ref-assets/terminidos.png'),
+  automatas:  asset('/ref-assets/automatas.png'),
+  iluminados: asset('/ref-assets/iluminados.png'),
 }
 
 function SubfactionCard({
@@ -113,7 +114,7 @@ export default function V2SubfactionSelectPage({ factionId, onBack, onSelectSubf
           </span>
         </div>
         <img
-          src="/ref-assets/logo-manual.png"
+          src={asset('/ref-assets/logo-manual.png')}
           alt="Manual de Exterminio"
           className="h-11 object-contain"
           style={{ filter: 'brightness(0) invert(1)' }}

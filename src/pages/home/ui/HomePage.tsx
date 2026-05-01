@@ -1,6 +1,7 @@
 import ClassifiedBadge from '@/shared/ui/ClassifiedBadge'
 import AppHeader from '@/shared/ui/AppHeader'
 import AppFooter from '@/shared/ui/AppFooter'
+import { asset } from '@/shared/lib/asset'
 
 interface Props { onEnter: () => void }
 
@@ -14,7 +15,7 @@ export default function HomePage({ onEnter }: Props) {
 
           {/* Logo Supertierra */}
           <img
-            src="/ref-assets/supertierra.png"
+            src={asset('/ref-assets/supertierra.png')}
             alt="Logo de la Supertierra"
             className="w-36 h-auto object-contain"
             style={{ filter: 'drop-shadow(0 0 20px rgba(255,204,0,0.25))' }}
