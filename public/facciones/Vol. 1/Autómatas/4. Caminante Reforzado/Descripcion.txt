@@ -1,0 +1,11 @@
+El Caminante Reforzado es una variante del Caminador Explorador. 
+
+Esta variante posee un incremento drástico de su armadura, a tal punto que ahora el Autómata que lo maneja se encuentra totalmente cubierto en una cabina de alta resistencia. 
+
+Además su arsenal fue mejorado con una mejor cadencia de disparo y además de un par de misiles  a cada lado del Caminante. 
+
+Los puntos débiles de esta unidad son: 
+La Base del Caminante, el cual no posee tanto refuerzo de armadura como la parte de arriba.
+Los Cohetes: unos cuantos tiros a los mismos cohetes antes de ser lanzados harán que estos exploten, llevándose a los Caminantes con ellos.
+
+Esta unidad se considera como una unidad pesada entre las filas Autómatas.

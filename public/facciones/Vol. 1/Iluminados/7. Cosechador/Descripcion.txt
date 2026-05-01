@@ -1,0 +1,15 @@
+Los Cosechadores son las Unidades pesadas de los Iluminados.
+
+Los Cosechadores son seres de gran tamaño que poseen un escudo de energía el cual sólo se activa en presencia enemiga.
+
+Poseen un láser de energía de extrema potencia que desintegrara a cualquier Helldiver por su paso.
+
+Si el Helldiver se encuentra cerca, lanzarán un rayos capaces de matar a los Helldivers con poca vida, sino causarán una parálisis temporal.
+
+Casi todo su cuerpo posee blindaje pesado, exceptuando las coyunturas  de sus patas y su cabeza.
+
+Esta área posee armadura medianas y la pérdida de alguna de sus extremidades será un eliminación inmediata.
+
+También pueden ser destruidos con daño continuo al ojo.
+
+Destruir los cuernos que posee en la cabeza des-habilitara su capacidad de generar escudos.

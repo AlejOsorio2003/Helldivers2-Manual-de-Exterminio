@@ -1,0 +1,7 @@
+Los Devastadores de Cohetes también poseen la Armadura y punto débil que sus variantes.
+
+La diferencia principal con su versión más común es que, como su nombre lo dice, trae 2 lanzadores de Cohetes en los hombros.
+
+Estos lanzacohetes poseen una capacidad de 6 Cohetes por lanzador, teniendo una recarga extra para cada uno.
+
+Estos lanzacohetes pueden ser destruidos con un buen daño mediano o pesado para des-habilitar la capacidad de lanzar Cohetes por completo.

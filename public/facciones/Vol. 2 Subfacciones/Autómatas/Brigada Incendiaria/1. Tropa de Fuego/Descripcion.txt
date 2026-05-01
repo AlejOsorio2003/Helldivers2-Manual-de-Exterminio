@@ -1,0 +1,9 @@
+Estas Tropas posean todas las mismas defensa que sus contrapartes comunes.
+
+Sus armas han sido el gran cambio que han recibido.
+
+Tropa Lanzallamas: Estas Tropas poseen un potente Lanzallamas y una mochila de combustible para recargar munición en pleno combate. Obviamente esta mochila se vuelve su punto débil causando una gran combustión al ser destruida con cualquier arma.
+
+Tropa de Cañon Incendiario: Esta pequeña variante de la Tropa de Cohete, han abandonado los misiles por un cañor láser parecido a un Quasar, no posee defensas así que pueden ser ejecutados con facilidad. 
+
+Las Tropas de Fuego suelen ir en conjuntos de hasta 10 unidades.

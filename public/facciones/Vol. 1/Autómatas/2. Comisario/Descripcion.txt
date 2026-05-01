@@ -1,0 +1,5 @@
+Los Comisario son los líderes de las Tropas de Infantería, poseen el mismo nivel de armadura y ofensiva que sus tropas. 
+
+Poseen un pistola y una cuchilla como arma principal. 
+
+También pueden llamar refuerzos pero con menos frecuencia, dejándole el trabajo a sus subordinados.

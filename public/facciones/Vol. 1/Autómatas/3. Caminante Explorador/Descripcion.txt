@@ -1,0 +1,9 @@
+El Caminante Explorador es primera unidad mediana del frente Autónoma. 
+
+Es un vehículo controlado por una Tropa de Infantería totalmente expuesto.
+
+La estructura del vehículo está altamente reforzada y será difícil bajarlo si no se posee armas de por lo menos calibre medio.
+
+Posee una torreta láser de cadencia media.
+
+La forma más efectiva y rápida de bajar a estas unidades es matando a la Tropa de Infantería que lo controla.

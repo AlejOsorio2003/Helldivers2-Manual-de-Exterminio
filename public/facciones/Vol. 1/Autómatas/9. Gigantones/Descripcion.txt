@@ -1,0 +1,19 @@
+Los Gigantones son la unidad Pesada más básica de las filas autómatas. 
+
+Su alta armadura solo puede ser atravesada con armas de calibre pesado, esto incluyendo los explosivos.
+
+Sus únicos puntos débiles son el pequeño ojo que tienen en todo el medio de su "Cara", el cual sigue siendo un punto altamente resistente. 
+
+Su verdadero punto débil es su escape de calor en la espalda el cual al ser destruido hará que el Gigantón sea eliminado de inmediato o en cuestión de segundos debido al sobrecalentamiento. 
+
+La destrucción de sus extremidades no evitará el movimiento del Gigantón, al menos que se destruyan ambas piernas, esto provocaría una desactivacion de la Unidad al caer al piso.
+
+Pose 3 variantes, los cuales sólo cambian sus armas y no añaden estadísticas adicionales. 
+
+Estas variantes son:
+
+Peleador: Los Peleadores son los Gigantones más comunes y poseen lanzacohetes en un brazo y un cañón láser de alto impacto en el otro.
+
+Calcinador: Esta variante cambia sus armas por un lanzallamas y una cierra capaz de despedazar lo que sea este los suficientemente cerca.
+
+Aniquilador: Poseen doble lanzador de cohetes, esta variante es un poco más escasa y se pueden ver poseer una bandera autómata sobre su cabeza.

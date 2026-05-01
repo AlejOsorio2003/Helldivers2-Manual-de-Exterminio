@@ -1,0 +1,5 @@
+Esta variante de Acechadores poseen los mismos atributos que sus contrapartes normales, pero son extremadamente más agresivas.
+
+Estés Acechadores no necesitan de un nido para llegar al campo de batalla y no escapan constantemente,  casi como si intentarán un todo o nada al ver a su presa.
+
+Suelen ir en manadas de hasta 5.

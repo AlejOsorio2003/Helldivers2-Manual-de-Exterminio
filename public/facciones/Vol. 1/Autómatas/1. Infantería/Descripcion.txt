@@ -1,0 +1,21 @@
+Los Autómatas poseen 8 diferentes variantes en sus tropas más bajas.
+
+Se podrían categorizar como unidades diferentes pero realmente todos cumplen las mismas funciones  dentro de las filas de Infantería. Poseen casi nula diferencia de armaduras como para necesitar su propia página en el manual.
+
+Todos los miembros de las Tropas poseen armadura ligera y armas de poco impacto. Un Armamento básico y buenos reflejos son más que suficiente para evitar ser tocados por estas máquinas.
+
+Las 8 variantes son:
+
+Tropa básica: Se puede encontrar llevando un fusil de asalto de calibre estándar.
+
+Merodeador: Lleva un cañón de disparo rápida y un poco más robusto, lo cual es solo visual ya que su armadura es la misma.
+
+Peleador: Unidades que llevan doble cuchillas de calor, incapaces de atacar a distancia. 
+
+Asaltante de Ametralladora: Físicamente son iguales a los Merodeadores pero estos poseen una Ametralladora como arma principal. 
+
+Asaltante de Cohete: Físicamente son igual al Merodeador pero llevan un lanzacohetes de baja potencia.
+
+Asaltante de asalto: Físicamente igual que un Merodeador pero estos poseen una cuchilla en una mano, una pistola de bajo calibre y una mochila de salto de recarga lenta. Estos suelen explotar si les revientan su mochila.
+
+Las Tropas son la única unidad Autómata capaz de llamar refuerzos.

@@ -1,0 +1,7 @@
+Los Devastadores son la unidad mediana predeterminada de los autómatas.
+
+Estas unidades tienen un brazo con un cañón láser de potencia modera, y poseen grandes puños de aceros capaces de derribar a cualquier Helldiver que decida acercarse demasiado. 
+
+Poseen armadura Media y su único punto con baja armadura es su rostro. Así que para poder bajarlo sin la capacidad de darle disparos a la cabeza, se tendrá que llevar armas de penetración mediana para enfrentarse.
+
+Los Devastadores poseen 2 variantes más resistentes y ofensivas: Pesado y Cohetes.

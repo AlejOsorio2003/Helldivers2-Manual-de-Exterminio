@@ -1,0 +1,11 @@
+Las Naves de Descenso son las naves que traen a los refuerzos enemigos cuando son llamados por las Tropas de Infantería o los Comisarios.
+
+No poseen ninguna arma ofensiva.
+
+Pueden traer como refuerzos a todas las unidades de los autómatas,  sin excepciones.
+
+La manera más fácil de evitar que suelten a más enemigos al campo de batalla es destruyéndolas antes de que suelten a la manada.
+
+Para destruirlo es mejor que se olviden de dispararles, solo las armas categorizadas como Anti-tanques son capaces de destruirlos.
+
+Su puntos débiles son los propulsores que los mantienen en el aire, al destruir 1 de estos 4 será suficiente para destruir la nave en su totalidad.

@@ -1,0 +1,9 @@
+Los Comandantes Alfas son la última fase de la línea evolutiva de los Recolectores. 
+
+Comparten casi todo los mismos atributos y debilidades que otros Comandantes.
+
+Su variante principal son su armadura mejorada y ahora tiene la capacidad de llamar mejores aliados al combate, principal al Guerrero Alfa.
+
+También se les considera como los cobardes de los Terminidos,  si se encuentra totalmente solo y recibe algo de daño, intentará huir para reponer sus fuerzas y llamar más aliados.
+
+Es la única unidad "Pesada" que puede llamar refuerzos.

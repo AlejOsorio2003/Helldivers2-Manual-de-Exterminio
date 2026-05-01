@@ -1,0 +1,11 @@
+Los Vigilantes son la única unidad capaz de llamar refuerzos entre las filas Iluminadas.
+
+Los Vigilantes son drones que estarán patrullando el área de la misión, si detectan peligro, no dudaran en llamar a la caballería.
+
+Los Vigilantes poseen armadura ligera así que cualquier arma puede eliminarlos. 
+
+El punto débil de los Vigilantes es su visor, al ser destruido los Vigilantes serán completamente eliminados.
+
+También poseen unas aletas alrededor de su visor, si son destruidas, explotaran al tocar el suelo, así que tener cuidado cuando lluevan partes.
+
+Su único método ataque es lanzar rayos si se encuentra muy cerca una unidad enemiga. Paralizandola temporalmente y dejándola al merced de otros Iluminados.
