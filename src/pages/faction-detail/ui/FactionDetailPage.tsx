@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { getFactionById } from '@/entities/faction/model/data'
 import type { FactionId, Enemy, ThreatLevel } from '@/entities/faction/model/types'
 import BackButton from '@/shared/ui/BackButton'
@@ -111,7 +111,7 @@ function PaginationBar({
     <button
       onClick={() => active && onClick()}
       aria-label={dir === 'prev' ? 'Página anterior' : 'Página siguiente'}
-      className="flex items-center justify-center w-8 h-8 shrink-0 transition-all duration-200 focus-visible:outline-none"
+      className="flex items-center justify-center w-10 h-10 sm:w-8 sm:h-8 shrink-0 transition-all duration-200 focus-visible:outline-none touch-manipulation"
       style={{
         border: active ? `1px solid ${color}40` : '1px solid rgba(255,255,255,0.08)',
         background: 'rgba(0,0,0,0.25)',
@@ -139,11 +139,11 @@ function PaginationBar({
 
         {slots.map((slot, i) => {
           if (slot === null) {
-            return <span key={`empty-${i}`} className="w-7 h-7 shrink-0" />
+            return <span key={`empty-${i}`} className="w-9 h-9 sm:w-7 sm:h-7 shrink-0" />
           }
           if (slot === '…') {
             return (
-              <span key={`ell-${i}`} className="w-7 h-7 shrink-0 flex items-center justify-center font-mono text-xs text-text-muted/40">
+              <span key={`ell-${i}`} className="w-9 h-9 sm:w-7 sm:h-7 shrink-0 flex items-center justify-center font-mono text-xs text-text-muted/40">
                 …
               </span>
             )
@@ -153,7 +153,7 @@ function PaginationBar({
             <button
               key={slot}
               onClick={() => onChange(slot)}
-              className="w-7 h-7 shrink-0 font-mono text-[11px] transition-all duration-200 cursor-pointer focus-visible:outline-none"
+              className="w-9 h-9 sm:w-7 sm:h-7 shrink-0 font-mono text-[11px] transition-all duration-200 cursor-pointer focus-visible:outline-none touch-manipulation"
               style={{
                 color: isActive ? color : 'rgba(255,255,255,0.3)',
                 border: isActive ? `1px solid ${color}60` : '1px solid transparent',
@@ -179,12 +179,31 @@ interface Props {
 export default function FactionDetailPage({ factionId, onBack }: Props) {
   const faction = getFactionById(factionId)
   const [currentPage, setCurrentPage] = useState(0)
+  const touchStartX = useRef<number | null>(null)
+  const touchStartY = useRef<number | null>(null)
 
   if (!faction) return null
 
   const { name, color, enemies } = faction
   const total = enemies.length
   const enemy = enemies[currentPage]
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX
+    touchStartY.current = e.touches[0].clientY
+  }
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null || touchStartY.current === null) return
+    const dx = e.changedTouches[0].clientX - touchStartX.current
+    const dy = e.changedTouches[0].clientY - touchStartY.current
+    if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 50) {
+      if (dx < 0 && currentPage < total - 1) setCurrentPage((p) => p + 1)
+      if (dx > 0 && currentPage > 0) setCurrentPage((p) => p - 1)
+    }
+    touchStartX.current = null
+    touchStartY.current = null
+  }
 
   return (
     <div className="min-h-screen flex flex-col animate-fade-up">
@@ -220,8 +239,12 @@ export default function FactionDetailPage({ factionId, onBack }: Props) {
         <BackButton onClick={onBack} />
       </div>
 
-      {/* Card area — scrollable, centered */}
-      <main className="flex-1 min-h-0 overflow-y-auto flex flex-col items-center px-4 sm:px-6 lg:px-8 py-3">
+      {/* Card area — scrollable, centered; swipe left/right to change page */}
+      <main
+        className="flex-1 min-h-0 overflow-y-auto flex flex-col items-center px-4 sm:px-6 lg:px-8 py-3"
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
         <div className="w-full max-w-3xl">
           <UnitCard key={enemy.id} enemy={enemy} color={color} />
         </div>

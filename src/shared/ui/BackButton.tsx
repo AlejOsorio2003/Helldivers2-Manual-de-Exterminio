@@ -6,10 +6,10 @@ export default function BackButton({ onClick }: Props) {
       onClick={onClick}
       aria-label="Volver"
       className="
-        flex items-center gap-2 px-3 py-2
+        flex items-center gap-2 px-4 py-3 sm:px-3 sm:py-2
         font-mono text-xs tracking-widest uppercase
         cursor-pointer transition-all duration-200
-        focus-visible:outline-none
+        focus-visible:outline-none touch-manipulation
       "
       style={{ border: '1px solid rgba(255,204,0,0.3)', color: 'rgba(255,204,0,0.6)' }}
       onMouseEnter={(e) => {
