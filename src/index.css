@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 @theme {
+  --breakpoint-xs: 480px;
+
   --font-heading: "Bebas Neue", "Barlow Condensed", sans-serif;
   --font-display: "Barlow Condensed", sans-serif;
   --font-body: "Rajdhani", sans-serif;
@@ -64,15 +66,6 @@ body {
     linear-gradient(90deg, rgba(78, 144, 186, 0.08) 1px, transparent 1px);
   background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
 }
-
-/* ─── Acordeón (CSS grid trick) ────────────────────────────── */
-.accordion-grid {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.35s ease;
-}
-.accordion-grid.open { grid-template-rows: 1fr; }
-.accordion-inner { overflow: hidden; }
 
 /* ─── Scrollbar ─────────────────────────────────────────────── */
 ::-webkit-scrollbar { width: 4px; }

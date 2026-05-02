@@ -7,6 +7,7 @@ import FactionDetailPage from '@/pages/faction-detail/ui/FactionDetailPage'
 import V2FactionSelectPage from '@/pages/v2-faction-select/ui/V2FactionSelectPage'
 import V2SubfactionSelectPage from '@/pages/v2-subfaction-select/ui/V2SubfactionSelectPage'
 import V2FactionDetailPage from '@/pages/v2-faction-detail/ui/V2FactionDetailPage'
+import BackgroundOverlay from '@/shared/ui/BackgroundOverlay'
 
 type Page =
   | 'home'
@@ -35,6 +36,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen grid-bg">
+      <BackgroundOverlay />
       {page === 'home' && (
         <HomePage key={pageKey} onEnter={() => navigate('volume-select')} />
       )}

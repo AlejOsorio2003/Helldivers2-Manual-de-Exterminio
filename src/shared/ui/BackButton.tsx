@@ -6,7 +6,7 @@ export default function BackButton({ onClick }: Props) {
       onClick={onClick}
       aria-label="Volver"
       className="
-        flex items-center gap-2 px-4 py-3 sm:px-3 sm:py-2
+        flex items-center gap-2 px-6 py-4 xs:px-3 xs:py-2
         font-mono text-xs tracking-widest uppercase
         cursor-pointer transition-all duration-200
         focus-visible:outline-none touch-manipulation

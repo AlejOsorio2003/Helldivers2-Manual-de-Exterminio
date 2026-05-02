@@ -31,57 +31,67 @@ function buildSlots(total: number, current: number): (number | '…' | null)[] {
 function UnitCard({ enemy, color }: { enemy: Enemy; color: string }) {
   const [imgError, setImgError] = useState(false)
 
+  const imgEl = !imgError ? (
+    <img src={asset(enemy.image)} alt={enemy.name} loading="lazy" onError={() => setImgError(true)} className="w-full h-full object-contain p-3" />
+  ) : (
+    <span className="font-mono text-[9px] tracking-widest opacity-25" style={{ color }}>IMG N/A</span>
+  )
+
+  const threatDots = Array.from({ length: 5 }).map((_, i) => (
+    <span key={i} className="block w-2 h-2 rounded-full" style={{
+      backgroundColor: i < enemy.threat ? color : 'rgba(255,255,255,0.12)',
+      boxShadow: i < enemy.threat ? `0 0 4px ${color}80` : 'none',
+    }} />
+  ))
+
   return (
     <div className="w-full animate-fade-in" style={{ border: `1px solid ${color}25`, background: '#0f1824' }}>
-      <div className="flex flex-col-reverse xs:flex-row items-center xs:items-start gap-4 p-4 sm:p-6">
 
-        <div className="flex-1 min-w-0 text-center xs:text-left">
-          <h2
-            className="font-heading font-black text-2xl sm:text-3xl lg:text-4xl tracking-widest uppercase leading-tight"
-            style={{ color }}
-          >
-            {enemy.name}
-          </h2>
-          <div className="flex items-center justify-center xs:justify-start gap-2 mt-3 flex-wrap">
-            <span className="font-mono text-[10px] text-text-muted/60 uppercase tracking-widest">Amenaza:</span>
-            <span className="font-mono text-[10px] uppercase tracking-widest font-bold" style={{ color }}>
-              {THREAT_LABELS[enemy.threat]}
-            </span>
-            <span className="flex gap-1">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <span
-                  key={i}
-                  className="block w-1.5 h-1.5 rounded-full"
-                  style={{
-                    backgroundColor: i < enemy.threat ? color : 'rgba(255,255,255,0.12)',
-                    boxShadow: i < enemy.threat ? `0 0 4px ${color}80` : 'none',
-                  }}
-                />
-              ))}
-            </span>
-          </div>
-        </div>
-
+      {/* Mobile layout (<480px): image centered large, name + threat centered below */}
+      <div className="flex flex-col items-center gap-5 p-5 xs:hidden">
         <div
-          className="shrink-0 overflow-hidden flex items-center justify-center"
+          className="overflow-hidden flex items-center justify-center"
           style={{
-            width: 'clamp(100px, 28vw, 180px)',
-            height: 'clamp(80px, 21vw, 140px)',
+            width: 'min(62vw, 210px)', height: 'min(62vw, 210px)',
             border: `1px solid ${color}20`,
             background: 'rgba(255,255,255,0.015)',
           }}
         >
-          {!imgError ? (
-            <img
-              src={asset(enemy.image)}
-              alt={enemy.name}
-              loading="lazy"
-              onError={() => setImgError(true)}
-              className="w-full h-full object-contain p-2"
-            />
-          ) : (
-            <span className="font-mono text-[9px] tracking-widest opacity-25" style={{ color }}>IMG N/A</span>
-          )}
+          {imgEl}
+        </div>
+        <div className="text-center">
+          <h2 className="font-heading font-black text-4xl tracking-widest uppercase leading-tight" style={{ color }}>
+            {enemy.name}
+          </h2>
+          <div className="flex items-center justify-center gap-2 mt-3 flex-wrap">
+            <span className="font-mono text-[10px] text-text-muted/60 uppercase tracking-widest">Amenaza:</span>
+            <span className="font-mono text-[10px] uppercase tracking-widest font-bold" style={{ color }}>
+              {THREAT_LABELS[enemy.threat]}
+            </span>
+            <span className="flex gap-1">{threatDots}</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop layout (≥480px): text left, image right */}
+      <div className="hidden xs:flex items-start gap-4 p-4 sm:p-6">
+        <div className="flex-1 min-w-0">
+          <h2 className="font-heading font-black text-2xl sm:text-3xl lg:text-4xl tracking-widest uppercase leading-tight" style={{ color }}>
+            {enemy.name}
+          </h2>
+          <div className="flex items-center justify-start gap-2 mt-3 flex-wrap">
+            <span className="font-mono text-[10px] text-text-muted/60 uppercase tracking-widest">Amenaza:</span>
+            <span className="font-mono text-[10px] uppercase tracking-widest font-bold" style={{ color }}>
+              {THREAT_LABELS[enemy.threat]}
+            </span>
+            <span className="flex gap-1">{threatDots}</span>
+          </div>
+        </div>
+        <div className="shrink-0 overflow-hidden flex items-center justify-center" style={{
+          width: 'clamp(100px, 28vw, 180px)', height: 'clamp(80px, 21vw, 140px)',
+          border: `1px solid ${color}20`, background: 'rgba(255,255,255,0.015)',
+        }}>
+          {imgEl}
         </div>
       </div>
 
