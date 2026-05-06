@@ -11,7 +11,7 @@ export const factionsVol2: FactionVol2[] = [
         id: 'cepa-esporas',
         name: 'Cepa Baño de Esporas',
         description:
-          'Mutaciones pálidas y volátiles de la Penumbra. Explotan en nubes de esporas al caer y se reproducen a un ritmo alarmante, saturando el campo de batalla.',
+          'Mutaciones pálidas surgidas en los confines de la Penumbra. Son bombas de esporas ambulantes con un alto nivel reproductivo que satura el campo de batalla. Tras su anterior exterminio, han regresado con una variación nueva: al exponerse a las esporas de sus congéneres, entran en un frenesí que los impulsa a velocidades increíbles.',
         enemies: [
           {
             id: 'carronero-esporas',
@@ -36,6 +36,14 @@ export const factionsVol2: FactionVol2[] = [
             image: '/vol2/terminidos/cepa-esporas/guerrero-esporas.webp',
             description:
               'Variante de Guerrero de la Cepa Baño de Esporas. Más resistente que sus compañeros de cepa, actúa como columna vertebral de las hordas de esta variante. Su explosión de esporas al morir cubre un radio considerable; se recomienda mantener distancia al eliminarlo.',
+          },
+          {
+            id: 'titan-bano-esporas',
+            name: 'Titán de Baño de Esporas',
+            threat: 5,
+            image: '/vol2/terminidos/cepa-esporas/titan-bano-esporas.webp',
+            description:
+              'Una nueva variante de Titán Bilis ha llegado para aterrorizar a nuestros ciudadanos. Modificada por el contacto prolongado con las esporas Terminidas, esta variante posee mayor resistencia en la cabeza para evitar ser eliminada con facilidad, como ocurre con sus contrapartes normales. Ha perdido la capacidad de producir Bilis, pero a cambio puede vomitar colosales cantidades de esporas para potenciar a los Terminidos de Baño de Esporas cercanos.',
           },
         ],
       },
