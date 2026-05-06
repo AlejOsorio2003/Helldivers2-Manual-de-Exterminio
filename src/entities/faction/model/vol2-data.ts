@@ -144,38 +144,6 @@ export const factionsVol2: FactionVol2[] = [
         ],
       },
       {
-        id: 'legion-cyborg',
-        name: 'Legión Cyborg',
-        description:
-          'Los antiguos enemigos de la democracia han vuelto a surgir después de aparentar seguir las Órdenes de la Libertad en su estadía obligatoria en Cyberstan. Estos socialistas biomecanizados crearon a los Autómatas, enviando sus planos fuera de nuestra galaxia conocida. Sus filas están formadas por Agitadores, Radicales y Vociferadores.',
-        enemies: [
-          {
-            id: 'agitador',
-            name: 'Agitador',
-            threat: 3,
-            image: '/vol2/automatas/legion-cyborg/agitador.webp',
-            description:
-              'Son los capitanes de batalla de la Legión Cyborg. Aunque parecen tener una fuerte armadura, en realidad usan un metal liviano que solo los hace más resistentes. Cualquier arma de cualquier calibre realizará el trabajo.\n\nPueden dar órdenes tanto a los Cybors como a los Autómatas, haciendo que activen una especie de frenesí hasta que el enemigo sea aniquilado. Este efecto se acaba cuando el Agitador que dio la orden muere.\n\nPoseen un cañón de plasma que puede disparar 3 cargas aisladas, y si su enemigo sigue vivo después de eso, pueden sobrecalentar su brazo para lanzar una carga mayor a costa de quedarse sin poder disparar por un tiempo.\n\nSiempre se mantienen detrás de sus aliados, como los cobardes socialistas que son.',
-          },
-          {
-            id: 'radicales',
-            name: 'Radicales',
-            threat: 2,
-            image: '/vol2/automatas/legion-cyborg/radicales.webp',
-            description:
-              'Son los músculos y carne de cañón de las filas Cyborgs.\n\nVan en grupos de hasta 6 unidades a la vez. Aunque poseen un cañón parecido al de los Agitadores, los Radicales prefieren lanzarse al combate con nada más que puños y patadas; siempre anunciarán su presencia gritando propaganda socialista y lanzando una bomba de humo.\n\nSu falta de armadura los hace bastante fáciles de eliminar, pero tengan precaución.',
-          },
-          {
-            id: 'vociferador',
-            name: 'Vociferador',
-            threat: 5,
-            image: '/vol2/automatas/legion-cyborg/vociferador.webp',
-            description:
-              'Son las unidades pesadas de la Legión.\n\nTienen una resistencia bastante notable y solo las armas antitanque serían capaces de penetrar tal blindaje, aunque sigue teniendo puntos débiles.\n\nEl Vociferador posee 6 escapes de calor que pueden ser dañados con cualquier calibre: 3 en la parte baja de su cuerpo y 3 detrás de su cabeza. Si 3 de estos escapes son dañados, se abrirá una escotilla en su respectiva zona, lo suficientemente grande para que una granada entre y lo destruya desde adentro.\n\nEsta no será una tarea fácil: este enemigo es piloteado por un Radical ubicado en la cabeza como fuente de poder. Además, tiene cañones de plasma a ambos lados de la cabeza, 2 torretas de disparo rápido ubicadas sobre sus ruedas de tanque y, por último, también puede lanzar una lluvia de cohetes que intentarán predecir los movimientos de sus enemigos.\n\nDato final: al ser destruido, la cápsula donde se ubica el Radical que lo controla puede salir volando y caer sobre algún Helldiver distraído. ¡Siempre pendientes del cielo cuando eliminen uno!',
-          },
-        ],
-      },
-      {
         id: 'brigada-incendiaria',
         name: 'Brigada Incendiaria',
         description:
@@ -212,6 +180,38 @@ export const factionsVol2: FactionVol2[] = [
             image: '/vol2/automatas/brigada-incendiaria/giganton-fuego.webp',
             description:
               'Estos Gigantones son la cara principal de la Brigada Incendiaria; físicamente poseen la misma resistencia que sus contrapartes. Sus armas constan de 2 cañones láser de altas temperaturas, capaces de destruir a cualquier unidad que se interponga. A larga distancia, cambian su modo de disparo para lanzar una lluvia de bombas de fuego; un impacto directo es más que suficiente para acabar con un Helldiver. Suelen acompañar al resto de las unidades, aunque también pueden encontrarse hasta 4 en zonas estacionarias.',
+          },
+        ],
+      },
+      {
+        id: 'legion-cyborg',
+        name: 'Legión Cyborg',
+        description:
+          'Los antiguos enemigos de la democracia han vuelto a surgir después de aparentar seguir las Órdenes de la Libertad en su estadía obligatoria en Cyberstan. Estos socialistas biomecanizados crearon a los Autómatas, enviando sus planos fuera de nuestra galaxia conocida. Sus filas están formadas por Agitadores, Radicales y Vociferadores.',
+        enemies: [
+          {
+            id: 'agitador',
+            name: 'Agitador',
+            threat: 3,
+            image: '/vol2/automatas/legion-cyborg/agitador.webp',
+            description:
+              'Son los capitanes de batalla de la Legión Cyborg. Aunque parecen tener una fuerte armadura, en realidad usan un metal liviano que solo los hace más resistentes. Cualquier arma de cualquier calibre realizará el trabajo.\n\nPueden dar órdenes tanto a los Cybors como a los Autómatas, haciendo que activen una especie de frenesí hasta que el enemigo sea aniquilado. Este efecto se acaba cuando el Agitador que dio la orden muere.\n\nPoseen un cañón de plasma que puede disparar 3 cargas aisladas, y si su enemigo sigue vivo después de eso, pueden sobrecalentar su brazo para lanzar una carga mayor a costa de quedarse sin poder disparar por un tiempo.\n\nSiempre se mantienen detrás de sus aliados, como los cobardes socialistas que son.',
+          },
+          {
+            id: 'radicales',
+            name: 'Radicales',
+            threat: 2,
+            image: '/vol2/automatas/legion-cyborg/radicales.webp',
+            description:
+              'Son los músculos y carne de cañón de las filas Cyborgs.\n\nVan en grupos de hasta 6 unidades a la vez. Aunque poseen un cañón parecido al de los Agitadores, los Radicales prefieren lanzarse al combate con nada más que puños y patadas; siempre anunciarán su presencia gritando propaganda socialista y lanzando una bomba de humo.\n\nSu falta de armadura los hace bastante fáciles de eliminar, pero tengan precaución.',
+          },
+          {
+            id: 'vociferador',
+            name: 'Vociferador',
+            threat: 5,
+            image: '/vol2/automatas/legion-cyborg/vociferador.webp',
+            description:
+              'Son las unidades pesadas de la Legión.\n\nTienen una resistencia bastante notable y solo las armas antitanque serían capaces de penetrar tal blindaje, aunque sigue teniendo puntos débiles.\n\nEl Vociferador posee 6 escapes de calor que pueden ser dañados con cualquier calibre: 3 en la parte baja de su cuerpo y 3 detrás de su cabeza. Si 3 de estos escapes son dañados, se abrirá una escotilla en su respectiva zona, lo suficientemente grande para que una granada entre y lo destruya desde adentro.\n\nEsta no será una tarea fácil: este enemigo es piloteado por un Radical ubicado en la cabeza como fuente de poder. Además, tiene cañones de plasma a ambos lados de la cabeza, 2 torretas de disparo rápido ubicadas sobre sus ruedas de tanque y, por último, también puede lanzar una lluvia de cohetes que intentarán predecir los movimientos de sus enemigos.\n\nDato final: al ser destruido, la cápsula donde se ubica el Radical que lo controla puede salir volando y caer sobre algún Helldiver distraído. ¡Siempre pendientes del cielo cuando eliminen uno!',
           },
         ],
       },
