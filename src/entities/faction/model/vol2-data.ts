@@ -221,8 +221,41 @@ export const factionsVol2: FactionVol2[] = [
     id: 'iluminados',
     name: 'Iluminados',
     color: '#a855f7',
-    tagline: 'Subfacciones no disponibles',
-    subfactions: [],
+    tagline: 'Grupos de asimilación alienígena',
+    subfactions: [
+      {
+        id: 'apropiadores',
+        name: 'Apropiadores',
+        description:
+          'Un colosal grupo de Iluminados organizado para apropiarse de nuestros libres mundos. Sus filas están formadas enteramente por Iluminados; ningún Mutamorfo o Sin Voto se encuentra entre ellos. Sus nuevas incorporaciones son los Obtrutores, los Veracidores y los Guardes.',
+        enemies: [
+          {
+            id: 'obtrutores',
+            name: 'Obtrutores',
+            threat: 1,
+            image: '/vol2/iluminados/apropiadores/obtrutores.webp',
+            description:
+              'Esta nueva variante de Vigías posee nula armadura; son simples biocarne de cañón para sus amos Iluminados.\n\nDebido a las modificaciones realizadas para aumentar su producción en masa, los Obtrutores perdieron la capacidad de lanzar bengalas para llamar refuerzos.\n\nAhora avanzan en colosales grupos de hasta 12 unidades, disparando a cualquier ser vivo que sus amos les ordenen.',
+          },
+          {
+            id: 'veracidor',
+            name: 'Veracidor',
+            threat: 3,
+            image: '/vol2/iluminados/apropiadores/veracidor.webp',
+            description:
+              'Los Iluminados crearon sus propios Exotrajes de la Tiranía. Estos gorilas mecánicos pueden considerarse como la línea de defensa de esta subfacción.\n\nPoseen una fuerza física descomunal, capaz de mandar a volar a cualquier Helldiver de un solo golpe.\n\nAunque su resistencia no es tan alta, igualmente se necesitará armamento de penetración media o superior para eliminarlos. La forma más rápida de acabar con estas unidades es apuntar a sus pilotos, aunque sus escudos de energía dificultan esta tarea en plena batalla.\n\nPara una eliminación rápida, romper la antena en la cabeza de la maquinaria hará que el escudo que protege al piloto desaparezca, dejándolo a merced de la Democracia. Otros puntos débiles son las coyunturas de la cápsula en la parte trasera; al romperlas, la cápsula se separará provocando una pequeña explosión que destruirá la unidad.\n\nSuelen ir en grupos de hasta 3.',
+          },
+          {
+            id: 'guardes',
+            name: 'Guardes',
+            threat: 4,
+            image: '/vol2/iluminados/apropiadores/guardes.webp',
+            description:
+              'Una versión mejorada y modificada del Veracidor.\n\nLos cambios más notorios son la sustitución de sus gigantescos brazos por cañones de plasma, capaces de lanzar una lluvia de bolas de plasma que aniquilan todo lo que tengan en frente a larga distancia.\n\nTambién poseen un nivel de armadura superior, por lo que se necesitará un arma de penetración pesada para eliminarlo de manera efectiva.\n\nA pesar de su mayor blindaje, conserva las mismas debilidades que el Veracidor.\n\nSuelen ir solos o en grupos de 2.',
+          },
+        ],
+      },
+    ],
   },
 ]
 
