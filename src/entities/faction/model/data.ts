@@ -152,7 +152,7 @@ export const factions: Faction[] = [
         threat: 3,
         image: '/facciones/Vol. 1/Terminidos/18. Comandante Alfa/3159493752_preview_Screenshot_2024-08-07_154519.png',
         description:
-          'La última fase de la línea evolutiva de los Carroñeros. Comparte los atributos y debilidades de otros Comandantes, pero con armadura mejorada y la capacidad de llamar Guerreros Alfa al combate. Presentan un comportamiento de autopreservación único entre los Terminidos pesados: si se encuentran solos y reciben daño, intentarán huir para recuperarse y reagrupar fuerzas. Es la única unidad "pesada" capaz de solicitar refuerzos.',
+          'Los Comandantes Alfa son la última fase de la línea evolutiva de los Recolectores. Comparten casi todos los mismos atributos y debilidades que otros Comandantes. Sus características principales son su armadura mejorada y la capacidad de llamar mejores aliados al combate, principalmente al Guerrero Alfa. Al encontrarse aislados contra los Helldivers, entrarán en un frenesí fascista y empezarán a atacar sin pausa, llamando a sus aliados con frecuencia. Es la única unidad pesada que puede llamar refuerzos.',
       },
       {
         id: 'titan-bilis',
